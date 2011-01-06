@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta charset="utf-8" />
   <title>Jay Skript And The Domsters: Contact the band</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/basic.css" />
-  <script type="text/javascript" src="scripts/global.js"></script>
-  <script type="text/javascript" src="scripts/contact.js"></script>
+  <script src="scripts/modernizr-1.6.min.js"></script>
+  <link rel="stylesheet" media="screen" href="styles/basic.css" />
 </head>
 <body>
-  <div id="header">
+  <header>
     <img src="images/logo.gif" alt="Jay Skript and the Domsters" />
-  </div>
-  <div id="navigation">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="photos.html">Photos</a></li>
-      <li><a href="live.html">Live</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </div>
-  <div id="content">
-    <h1>Contact the band</h1>
-    <form method="post" action="#">
-      <fieldset>
-        <p>
-         <label for="name">Name:</label>
-         <input type="text" id="name" name="name" value="Your name" class="required" />
-        </p>
-        <p>
-         <label for="email">Email:</label>
-         <input type="text" id="email" name="email" value="Your email address" class="email required" />
-        </p>
-        <p>
-         <label for="message">Message:</label>
-         <textarea cols="45" rows="7" id="message" name="message" class="required">Write your message here.</textarea>
-        </p>
-        <input type="submit" value="Send" />
-       </fieldset>
-    </form>
-  </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+<h1>Contact the band</h1>
+<form method="post" action="submit.html">
+  <fieldset>
+    <p>
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" placeholder="Your name" required="required" />
+    </p>
+    <p>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Your email address" required="required" />
+    </p>
+    <p>
+     <label for="message">Message:</label>
+     <textarea cols="45" rows="7" id="message" name="message" required="required" placeholder="Write your message here."></textarea>
+    </p>
+    <input type="submit" value="Send" />
+   </fieldset>
+</form>
+  </article>
+  <script src="scripts/global.js"></script>
 </body>
 </html>

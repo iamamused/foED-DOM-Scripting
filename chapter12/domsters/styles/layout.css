@@ -1,3 +1,7 @@
+section, header, article, nav {
+	display: block;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -11,7 +15,7 @@ body {
   background-repeat: repeat-x;
   max-width: 80em;
 }
-#header {
+header {
   background-image: url(../images/guitarist.gif);
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -19,8 +23,8 @@ body {
   border-style: solid;
   border-bottom-width: 0;
 }
-#navigation {
-  background-image: url(../images/navbar.gif);
+header nav {
+  background-image: url(../images/header navbar.gif);
   background-position: bottom left;
   background-repeat: repeat-x;
   border-width: .1em;
@@ -29,56 +33,65 @@ body {
   border-top-width: 0;
   padding-left: 10%;
 }
-#navigation ul {
+header nav ul {
   width: 100%;
   overflow: hidden;
   border-left-width: .1em;
   border-left-style: solid;
 }
-#navigation li {
+header nav li {
   display: inline;
 }
-#navigation li a {
+header nav li a {
   display: block;
   float: left;
   padding: .5em 2em;
   border-right: .1em solid;
 }
-#content {
+article {
   border-width: .1em;
   border-style: solid;
   border-top-width: 0;
   padding: 2em 10%;
   line-height: 1.8em;
 }
-#about #header {
-  background-image: url(../images/lineup.gif);
-}
-#photos #header {
-  background-image: url(../images/basshead.gif);
-}
-#live #header {
-  background-image: url(../images/bassist.gif);
-}
-#contact #header {
-  background-image: url(../images/drummer.gif);
-}
-#content img {
+article img {
   border-width: .1em;
   border-style: solid;
   outline-width: .1em;
   outline-style: solid;
 }
-#imagegallery li {
-  display: inline;
+
+
+
+
+
+#about header {
+  background-image: url(../images/lineup.gif);
 }
+#photos header {
+  background-image: url(../images/basshead.gif);
+}
+#live header {
+  background-image: url(../images/bassist.gif);
+}
+#contact header {
+  background-image: url(../images/drummer.gif);
+}
+
 #slideshow {
   width: 150px;
   height: 150px;
   position: relative;
   overflow: hidden;
 }
-img#frame {
+#preview {
+  position: absolute;
+  border-width: 0;
+  outline-width: 0;
+}
+
+#frame {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,11 +99,18 @@ img#frame {
   border-width: 0;
   outline-width: 0;
 }
-img#preview {
-  position: absolute;
-  border-width: 0;
-  outline-width: 0;
+
+
+#imagegallery li {
+  display: inline;
 }
+
+
+td {
+  padding: .5em 3em;
+}
+
+
 dl {
   overflow: hidden;
 }
@@ -100,12 +120,14 @@ dt {
 dd {
   float: left;
 }
+
+
 label {
   display: block;
 }
 fieldset {
   border: 0;
 }
-td {
-  padding: .5em 3em;
-}
+
+
+

@@ -18,51 +18,59 @@ a:active {
   color: #778;
   background-color: #ec8;
 }
-#header {
+header {
   color: #ec8;
   background-color: #334;
   border-color: #667;
 }
-#navigation {
+header nav {
   color: #455;
   background-color: #789;
   border-color: #667;
 }
-#content {
+article {
   color: #223;
   background-color: #edc;
   border-color: #667;
 }
-#navigation ul {
+header nav ul {
   border-color: #99a;
 }
-#navigation a:link,#navigation a:visited {
+header nav a:link,header nav a:visited {
   color: #eef;
   background-color: transparent;
   border-color: #99a;
 }
-#navigation a:hover {
+header nav a:hover {
   color: #445;
   background-color: #eb6;
 }
-#navigation a:active {
+header nav a:active {
   color: #667;
   background-color: #ec8;
 }
-#navigation a.here:link,
-#navigation a.here:visited,
-#navigation a.here:hover,
-#navigation a.here:active {
-  color: #eef;
-  background-color: #799;
-}
-#content img {
+article img {
   border-color: #ba9;
   outline-color: #dcb;
 }
 #imagegallery a {
   background-color: transparent;
 }
+
+
+
+
+
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active {
+  color: #eef;
+  background-color: #799;
+}
+
+
+
 th {
   color: #edc;
   background-color: #455;
@@ -78,4 +86,12 @@ tr.odd td {
 tr.highlight td {
   color: #223;
   background-color: #cba;
+}
+
+
+
+
+
+input.placeholder {
+  color: grey;
 }
